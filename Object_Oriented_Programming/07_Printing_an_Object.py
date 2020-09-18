@@ -25,3 +25,16 @@ class Shoe1:
 
 s2=Shoe1(1000, "Canvas")
 print(s2) #Observe the result in console. Is it Readable?
+
+
+
+#Example3:
+class Shoe2:
+    def __init__(self, price, material):
+        self.price = price
+        self.material = material
+    def __repr__(self):
+        return "A pair of shoe with price Rs. " + str(self.price) + " and material of shoe is " + self.material
+
+s3=Shoe2(1000, "Canvas")
+print(s3)

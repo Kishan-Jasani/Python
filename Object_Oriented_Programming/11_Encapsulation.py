@@ -3,6 +3,10 @@
 # --> Private attributes are those which are accessible only inside the class. 
 # --> This method of restricting access to our data is called encapsulation.
 
+# --> Encapsulation is preventing access to a data outside the class
+# --> Adding a __ in front of a attribute makes it private
+# --> In python, adding a __ changes the name of the attribute to _Classname__attribute
+
 class Customer:
     def __init__(self, cust_id, name, age, wallet_balance):
         self.cust_id = cust_id
