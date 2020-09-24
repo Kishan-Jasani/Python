@@ -56,4 +56,46 @@ List = [1,2,3,6,5,4,7,8,9,10,11,12,15,14,13,16,17,18,19,20]
 
 # Merge Sort Algorithm:-
 '''
+--> If 100 students is messed up and we want to arrange it in ascending order.
+
+--> Let's explore that algorithm. It is called Merge Sort and works well when the number of elements to be sorted is more.
+
+# The strategy used in this algorithm is as follows:
+--> Repeatedly divide the input unsorted list into sub-lists, such that each sublist contains only one element.
+--> Repeatedly merge the sub lists to produce new sorted sub lists until there is only one sublist remaining.
+
+--> example:-
+    
+    Unsorted List:               [44,84,96,4,10,12,25]
+    
+     Split List:               [44,84,96,4], [10,12,25]
+     
+    Split List again:      [44,88], [96,4], [10,12], [25]
+    
+    Split List again:    [44], [88], [96], [4], [10], [12], [25]
+    
+      Merge List:          [44,88], [4,96], [10,12], [25]
+      
+    Merge List again:          [4,44,88,96], [10,12,25]
+    
+    Merge List again:           [4,10,12,25,44,88,96]                #This is how we can get sorted list with Merging
+
+
+--> The technique used in merge sort algorithm is known as Divide and Conquer.
+--> It requires more memory as it divides the elements in the input list into separate right half and left half lists. 
+--> This is recursively done until there is only one element left in the lists.
+--> So for each right half and left half lists, separate memory is required.
+'''
+
+
+# Quick Sort Algorithm:-
+'''
+--> This sorting strategy known as Quick Sort works by picking an element in the input list as pivot and 
+    partitioning the list around the pivot. 
+--> Partitioning is done such that
+    - the pivot is placed at its correct position in the list,
+    - elements less than pivot are placed in the left partition and
+    - elements greater than the pivot are kept in the right partition.
+--> This is repeatedly done for each partition until all pivots are correctly placed in the list.
+
 '''
