@@ -2,6 +2,8 @@
 # --> You just need 8 lines of code to insert a record into a database table from Python. 
 # --> Take a look!
 
+#https://lex.infosysapps.com/en/viewer/web-module/lex_auth_012999418611122176829?collectionId=lex_auth_01278069079858380860&collectionType=Course&viewMode=START
+
 import mysql.connector
 
 #Establishing a connection
@@ -25,6 +27,8 @@ con.close()
 
 
 # MongoDB
+#https://lex.infosysapps.com/en/viewer/web-module/lex_auth_012887542735896576661?collectionId=lex_auth_01278069079858380860&collectionType=Course&viewMode=START 
+
 
 from pymongo import MongoClient
 conn=MongoClient('mongodb://localhost:27017/')
