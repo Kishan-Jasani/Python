@@ -14,11 +14,10 @@ INSTALLED_APPS = [
     'testapp'
 ]
 
-we need to add templates folder inside main project if we want to add HTML, CSS, javascript files
 
-
+we need to add templates folder inside main project if we want to add HTML files
 we have to add below path inside settings.py
-
+--------------------------------------------
 import os
 TEMPLATE_DIR = os.path.join(BASE_DIR,'templates')
 
@@ -41,4 +40,15 @@ TEMPLATES = [
         },
     },
 ]
+
+
+
+
+we have to add below path and below list inside settings.py to use images and css
+----------------------------------------------------------------------------------
+
+STATIC_DIR = os.path.join(BASE_DIR,'static')
+
+STATICFILES_DIRS = [ STATIC_DIR ]
+
 '''
